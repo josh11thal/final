@@ -1,0 +1,262 @@
+/*
+[Table Of Contents] 
+
+	01- GENERAL
+	02- HEADER 
+	03- NAVIGATION 
+	03A-SPRITES
+	04- SIDEBARS
+	05- MAIN PAGE
+	06- DIET
+	07- RESPONSIVENESS
+
+*/
+
+/*----------------------------------------------------------------------------- 
+=01 GENERAL 
+-----------------------------------------------------------------------------*/
+body {
+	font-size:14px;
+	font-family: Arial, "Times New Roman", serif;
+	color: #656565; 
+	font-color: #120B22;
+	background: url(../images/bg_body.jpg);
+}
+
+h1 {
+	font-size: 32px;
+	color: #120B22;
+	font-family: Arial;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+p {
+	color: #120B22;
+}
+
+#container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+/*----------------------------------------------------------------------------- 
+=02 HEADER 
+-----------------------------------------------------------------------------*/
+
+#header {
+/*	width: 100%;
+	margin: 0 auto;*/
+	border: dotted;
+	background: url(../images/hammock.jpg);
+}
+
+#header h3 {
+	font-style: italic;
+}
+
+#header h1 {
+	text-align: left;
+}
+
+/*----------------------------------------------------------------------------- 
+=03 NAVIGATION 
+-----------------------------------------------------------------------------*/
+#nav {
+	background: #D9E0F2;
+	height: 75px;
+}
+
+#nav ul {
+	padding: 10px 0 0 0;
+	height: 60px;
+	width: 450px;
+	font-size: 20px;
+	font-family: arial;
+	margin: 0;
+}
+
+#nav ul li {
+	float: left;
+	list-style: none;
+	margin: auto 0;
+}
+	
+#nav ul li a {
+	color: #120B22;
+	display: inline-block;
+	padding: 20px;
+	font-style: bold;
+	text-decoration: none;
+}
+
+#nav ul li a:hover {
+	background: #F0F1FA;
+	opacity: 0.7;
+}
+
+/*----------------------------------------------------------------------------- 
+=03A SPRITES
+-----------------------------------------------------------------------------*/
+#sprites {
+	width: 450px;
+	float: right;
+}
+
+#sprites ul li {
+	float: right;
+}
+	
+#sprites ul li a {
+	 display: block;
+	 width:23px;
+	 height:20px;
+	 text-indent: -9999em;
+}
+
+#sprites ul li.twitter {
+	background:url(../images/socialNav.png) -60px 64px; 
+}
+
+#sprites ul li.facebook {
+	background:url(../images/socialNav.png) -120px 64px; 
+}
+
+#sprites ul li.twitter:hover {
+	background:url(../images/socialNav.png) -60px 0px; 
+}
+
+#sprites ul li.facebook:hover {
+	background:url(../images/socialNav.png) -120px 0px; 
+}
+
+/*----------------------------------------------------------------------------- 
+=04 SIDEBARS
+-----------------------------------------------------------------------------*/
+#sidebarleft {
+	width: 10%;
+	float: left;	
+	height: 100%;
+	position: fixed;
+/*	background: #F7FCFA;
+*/}
+
+#sidebarright {
+	width: 10%;
+	float: right;	
+	height: 100%;
+	position: fixed;
+	margin-left: 90%;
+/*	background: green;
+*/
+}
+
+/*----------------------------------------------------------------------------- 
+=05 MAIN PAGE
+-----------------------------------------------------------------------------*/
+.first {
+	background: #FEFBFB;
+ 	opacity: 0.66;
+ 	position: relative;
+}
+
+.main {
+  	display: inline-block;
+	width: 48%;
+  	position: absolute;
+  	top: 10px;
+  	left: 10px;
+  	min-height: 400px;
+}
+
+.health {
+ 	display: inline-block;
+ 	width: 48%;
+ 	position: absolute;
+ 	top: 10px;
+ 	right: 10px;
+ 	min-height: 400px;
+}
+
+}
+
+/*----------------------------------------------------------------------------- 
+=06 DIET
+-----------------------------------------------------------------------------*/
+.second {
+	background-color: #FEFBFB;
+ 	opacity: 0.66;
+ 	position: relative;
+}
+
+.column1,
+.column2,
+.column3 {
+	display: block;
+	width: 33%;
+	float: left;
+}
+
+.greens img {
+	float: left;
+}
+
+/*----------------------------------------------------------------------------- 
+=07 RESPONSIVENES
+-----------------------------------------------------------------------------*/
+/*@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.column1,
+	.column2,
+	.column3 {
+		width: 30%;
+	} 
+
+	#container {
+    width: 768px;
+  }
+	
+	h1 {
+		 background: pink;
+	}
+
+	#nav a {
+		width: 100%;
+	}
+
+  
+}
+
+@media only screen and (max-width: 767px) {
+	.column1,
+	.column2,
+	.column3 {
+		width: 30%;
+	} 
+	
+	h1 {
+		 background: green;
+	}
+
+	#nav a {
+		width: 70%;
+	}
+
+
+}
+
+@media only screen and (min-width: 465px) and (max-width: 767px) {
+	.column1,
+	.column2,
+	.column3 {
+		width: 30%;
+	} 
+	
+	h1 {
+		 background: blue;
+	}
+
+	#nav a {
+		width: 33%;
+	}
+ 
+}*/
